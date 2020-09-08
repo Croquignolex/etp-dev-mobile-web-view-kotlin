@@ -25,13 +25,13 @@ class MainActivity : AppCompatActivity() {
         webView.webViewClient = WebViewClient()
         webView.scrollBarStyle = View.SCROLLBARS_INSIDE_OVERLAY
         // Set web view settings
-        val webSettings = webView.settings
-        webSettings.useWideViewPort = true
-        webSettings.javaScriptEnabled = true
-        webSettings.domStorageEnabled = true
-        webSettings.safeBrowsingEnabled = true
-        webSettings.cacheMode = WebSettings.LOAD_CACHE_ELSE_NETWORK
-        // Load url
+        webView.settings.apply {
+            useWideViewPort = true
+            javaScriptEnabled = true
+            domStorageEnabled = true
+            safeBrowsingEnabled = true
+            cacheMode =  WebSettings.LOAD_CACHE_ELSE_NETWORK
+        }
         webView.loadUrl("https://www.etp.dmsemergence.com/")
 
         refreshApp()

@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
         webSettings.safeBrowsingEnabled = true
         webSettings.cacheMode = WebSettings.LOAD_CACHE_ELSE_NETWORK
         // Load url
-        webView.loadUrl("https://www.google.com/")
+        webView.loadUrl("https://www.etp.dmsemergence.com/")
 
         refreshApp()
     }

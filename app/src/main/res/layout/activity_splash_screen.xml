@@ -14,4 +14,17 @@
         android:layout_centerInParent="true"
         android:contentDescription="@string/default_image_alt"
         android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/developer"
+        android:gravity="end"
+        android:textSize="15sp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_alignParentBottom="true"
+        android:textColorLink="@color/colorLink"
+        android:textColorHighlight="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/developer_name" />
 </RelativeLayout>

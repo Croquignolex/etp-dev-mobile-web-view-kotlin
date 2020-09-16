@@ -2,13 +2,18 @@ package com.mmac.app
 
 import android.os.Bundle
 import android.content.Intent
+import android.text.method.LinkMovementMethod
 import androidx.appcompat.app.AppCompatActivity
+import com.mmac.app.extensions.removeLinksUnderline
 import kotlinx.android.synthetic.main.activity_splash_screen.*
 
 class SplashScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
+
+        developer.movementMethod = LinkMovementMethod.getInstance();
+        developer.removeLinksUnderline()
 
         logo.alpha = 0f
         // Wait 1500 ms

@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">MMAC</string>
-    <string name="default_image_alt">...</string>
+    <string name="default_image_alt">…</string>
+
+    <string name="developer_name">
+        <a href="https://croquignolex-tikiton.dmsemergence.com/">
+            By Croquignolex Tikiton
+        </a>
+    </string>
 </resources>

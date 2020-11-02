@@ -1,5 +1,5 @@
 package com.mmac.app
-
+ 
 import android.os.Build
 import android.os.Bundle
 import android.view.View
@@ -9,8 +9,9 @@ import android.webkit.WebViewClient
 import android.annotation.SuppressLint
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.activity_main.webView
-import kotlinx.android.synthetic.main.activity_main.swipeToRefresh
+import kotlinx.android.synthetic.main.activity_main.*
+
+const val WEBSITE_URL = "https://www.etp.dmsemergence.com/"
 
 class MainActivity : AppCompatActivity() {
     private var backPressedTime: Long = 0
@@ -32,7 +33,7 @@ class MainActivity : AppCompatActivity() {
             safeBrowsingEnabled = true
             cacheMode =  WebSettings.LOAD_CACHE_ELSE_NETWORK
         }
-        webView.loadUrl("https://www.etp.dmsemergence.com/")
+        webView.loadUrl(WEBSITE_URL)
 
         refreshApp()
     }

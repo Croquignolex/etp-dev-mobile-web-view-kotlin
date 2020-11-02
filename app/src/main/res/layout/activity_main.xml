@@ -7,16 +7,16 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <!-- Set layout to refresh page by swiping down -->
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/swipeToRefresh"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <!-- Set web view to match on parent view -->
+
         <WebView
             android:id="@+id/webView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            />
+            android:layout_height="match_parent" />
+
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
 </RelativeLayout>
